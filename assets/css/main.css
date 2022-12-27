@@ -1,2 +1,28 @@
-/* Styles Global */
-body {background-color: #333;}
+/*=============== VARIABLES =============== */
+:root {
+  --light: #FFF; --dark: #201B2C; --dark-2: #333;
+  --dodgerBlue: #1E90FF; --skyBlue: #87CEEB;
+}
+/*============ RESET =============== */
+*, *::before, *::after {box-sizing: border-box;}
+* {margin: 0; padding: 0; border: none; outline: none; font-size: 100%;}
+ul {list-style: none;}
+a {text-decoration: none; color: var(--light)}
+img {width: 100%; height: auto;}
+body {background-color: var(--dark); color: var(--light);}
+/* ============ Styles Global ============== */
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-row-xy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
