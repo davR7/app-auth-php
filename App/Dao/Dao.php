@@ -8,10 +8,10 @@ class Dao extends PDO {
 
   public function __construct()
   {
-    $db = $_ENV['database'];
+    $db = $_ENV['DATABASE'];
     
-    $dns = $db['drive'] . ':host=' . $db['host'] .
-      ';dbname=' . $db['schema'];
+    $dns = $db['DRIVER'] . ':host=' . $db['HOST'] .
+      ';dbname=' . $db['SCHEMA'] . ';port=' . $db['PORT'];
 
     $options = [
       PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -21,8 +21,8 @@ class Dao extends PDO {
     try {
       parent::__construct(
         $dns, 
-        $db['username'], 
-        $db['password'],
+        $db['USERNAME'], 
+        $db['PASSWORD'],
         $options
       );
     } catch(PDOException $e) {

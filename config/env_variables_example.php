@@ -1,7 +1,7 @@
 <?php
-$_ENV['database']['driver'] = '';
-$_ENV['database']['host'] = '';
-$_ENV['database']['port'] = '';
-$_ENV['database']['schema'] = '';
-$_ENV['database']['username'] = '';
-$_ENV['database']['password'] = '';
+$_ENV['DATABASE']['DRIVER'] = '';
+$_ENV['DATABASE']['HOST'] = '';
+$_ENV['DATABASE']['PORT'] = '';
+$_ENV['DATABASE']['SCHEMA'] = '';
+$_ENV['DATABASE']['USERNAME'] = '';
+$_ENV['DATABASE']['PASSWORD'] = '';
