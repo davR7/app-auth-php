@@ -60,6 +60,24 @@
   overflow: hidden;
 }
 
+/* Info Message */
+.info-message__error,
+.info-message__success {
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.info-message__error {
+  display: none;
+  background-color: #F44336;
+}
+
+.info-message__success {
+  display: none;
+  background-color: #32CD32;
+}
+
 /* Forms */
 .forms {
   position: relative;
