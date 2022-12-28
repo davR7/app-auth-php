@@ -24,6 +24,9 @@ abstract class Controller {
     //render content
     require_once(FileBuildPath::create("App\\View\\Main\\$filename".'.php'));
 
+    //render libraries
+    require_once(FileBuildPath::create('App\\View\\Dependencies\\Libraries.php'));
+
     //render footer
     echo Mustache::replace('App\\View\\Template\\Footer.php', 'script', $filename);
   }
