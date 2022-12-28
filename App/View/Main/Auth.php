@@ -20,6 +20,10 @@
     <img class="animate-img" src="/assets/img/authentication-animate.svg" alt="animate imagem">
   </div>
   <div class="wrapper__right">
+    <div class="info-message flex-column-x">
+      <div class="info-message__error"></div>
+      <div class="info-message__success"></div>
+    </div>
     <div class="form-controls jsFormControls flex-row">
       <input type="radio" name="controls" id="radio-signin" checked>
       <input type="radio" name="controls" id="radio-signup">
@@ -28,16 +32,16 @@
       <div class="control-tab"></div>
     </div>
     <div class="forms flex-row">
-      <form class="signin-form jsSigninForm">
-        <input type="text" name="email" class="signin-form__field-text" placeholder="*Email">
+      <form class="signin-form jsSigninForm" method="POST">
+        <input type="email" name="email" class="signin-form__field-text" placeholder="*Email">
         <input type="password" name="password" class="signin-form__field-text" placeholder="*Senha">
         <button type="submit" class="signin-form__btn">Entrar</button>
       </form>
-      <form class="signup-form">
-        <input type="text" name="fullname" class="signup-form__field-text" placeholder="*Nome">
-        <input type="email" name="email" class="signup-form__field-text" placeholder="*Email">
-        <input type="password" name="password" class="signup-form__field-text" placeholder="*Senha">
-        <input type="password" name="password-confirm" class="signup-form__field-text" placeholder="*Confirme Senha">
+      <form class="signup-form" method="POST">
+        <input type="text" name="fullname" value="" class="signup-form__field-text" placeholder="*Nome">
+        <input type="email" name="email" value="" class="signup-form__field-text" placeholder="*Email">
+        <input type="password" name="password" value="" class="signup-form__field-text" placeholder="*Senha">
+        <input type="password" name="passwordConfirm" value="" class="signup-form__field-text" placeholder="*Confirme Senha">
         <button type="submit" class="signup-form__btn">Cadastrar</button>
       </form>
     </div>
