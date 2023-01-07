@@ -8,6 +8,6 @@ conexão e consultas no banco de dados.
 Foi utilizado com PHP orientado a objetos, PDO, CSS, JS, JQuery, 
 MySQL. Não foi utilizado Framework.
 
-# Requisitos:
+## Requisitos:
 - PHP 8.1+
 - MySQL database
