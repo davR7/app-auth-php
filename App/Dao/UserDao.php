@@ -24,15 +24,4 @@ class UserDao {
     $stmt->execute();
     $stmt = null;
   }
-  public function selectOne(array $filter)
-  {
-    $fKey = array_keys($filter)[0];
-    $fValue = array_values($filter)[0];
-
-    $query = "SELECT * FROM users WHERE $fKey=?";
-    $stmt = $this->conn->prepare($query);
-    $stmt->execute([$fValue]);
-    $data = $stmt->fetch();
-    return $data;
-  }
 }
