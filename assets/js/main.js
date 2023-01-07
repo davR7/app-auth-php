@@ -1,15 +1,17 @@
 /* JavaScript Global */
 function showMessageSuccess(message) {
   $("input").val("");
-  $(".info-message__error").css('display', 'none')
-  $(".info-message__success").css('display', 'block');
-  $(".info-message__success").html(message);
+  $(".message-box__error").css('display', 'none')
+  $(".message-box__success").css('display', 'block');
+  $(".message-box__success").html(message);
   setTimeout(() => {
-    $(".info-message__success").css('display', 'none');
-    $("#mensagem").html('');
+    $(".message-box__success").css('display', 'none');
+    $(".message-box__success").html('');
   }, 3000)
 }
 function showMessageError(message) {
-  $(".info-message__error").css('display', 'block')
-  $(".info-message__error").html('<strong>Erro! </strong>' + message);
+  $(".message-box__error").css('display', 'block')
+  $(".message-box__error")
+    .html("<strong>Erro! </strong>" + message);
 }
+

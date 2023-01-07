@@ -60,20 +60,20 @@
   overflow: hidden;
 }
 
-/* Info Message */
-.info-message__error,
-.info-message__success {
-  padding: 10px 20px;
-  margin-bottom: 30px;
+/* Message Box */
+.message-box__error,
+.message-box__success {
+  padding: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
 }
 
-.info-message__error {
+.message-box__error {
   display: none;
   background-color: #F44336;
 }
 
-.info-message__success {
+.message-box__success {
   display: none;
   background-color: #32CD32;
 }

@@ -20,9 +20,9 @@
     <img class="animate-img" src="/assets/img/authentication-animate.svg" alt="animate imagem">
   </div>
   <div class="wrapper__right">
-    <div class="info-message flex-column-x">
-      <div class="info-message__error"></div>
-      <div class="info-message__success"></div>
+    <div class="message-box flex-column-x">
+      <div class="message-box__error"></div>
+      <div class="message-box__success"></div>
     </div>
     <div class="form-controls jsFormControls flex-row">
       <input type="radio" name="controls" id="radio-signin" checked>
