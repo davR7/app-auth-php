@@ -33,3 +33,22 @@ $(document).ready(function () {
     })
   })
 })
+/*============ Ajax - Form Login ============*/
+$(document).ready(function () {
+  $(".signin-form").on('submit', function (e) {
+    e.preventDefault();
+    $.ajax({
+      url: '/auth/login',
+      method: 'POST',
+      data: $('.signin-form').serialize() + '&action=login',
+      dataType: 'json',
+      success(res) {
+        if (res.ok) {
+          window.location.href = res.redirect;
+        } else {
+          showMessageError(res.message);
+        }
+      }
+    })
+  })
+})
