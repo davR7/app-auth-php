@@ -11,6 +11,13 @@ html, body{
     user-select: none; /* Standard syntax */
 }
 
+.image-404 {
+    width: 300px;
+    position: relative;
+    z-index: 100;
+    pointer-events: none;
+}
+
 .info-text {
     font-weight: 400;
     font-size: 20px;
@@ -35,7 +42,7 @@ html, body{
     position: relative;
     z-index: 200;
     margin: 15px auto;
-    width: 100px;
+    width: 130px;
     padding: 10px 15px;
     border: 1px solid #1E90FF;
     border-radius: 100px;
