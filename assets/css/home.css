@@ -1,2 +1,5 @@
 /* Styles - Page Home */
-.my-home {color: greenyellow; text-align: center; font-size: 3rem;}
+.my-home {color: greenyellow; text-align: center; font-size: 3rem; margin-bottom: 40px;}
+.info-user__name, .info-user__email, .info-user__link {font-size: 1.5rem;}
+.info-user__link {margin-top: 50px;}
+.info-user__link:hover {color: #1E90FF;}
