@@ -55,7 +55,9 @@ abstract class Session {
    */
   public static function get($key)
   {
-    return $_SESSION[$key];
+    if (self::exists($key)) {
+      return $_SESSION[$key];
+    }
   }
   /**
    * set: sets a specific value to a specific key of the session
