@@ -5,8 +5,8 @@ uma camada, que foi nomeada como Dao. A Dao é responsavel pela
 conexão e consultas no banco de dados.
 
 ## Desenvolvido:
-Foi utilizado com PHP orientado a objetos, PDO, CSS, JS, JQuery, 
-MySQL. Não foi utilizado Framework.
+- No app é utilizado PHP orientado a objetos, PDO, CSS, JS, JQuery, MySQL. 
+- Não foi utilizado Framework.
 
 ## Requisitos:
 - PHP 8.1+
